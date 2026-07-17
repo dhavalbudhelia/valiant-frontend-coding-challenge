@@ -39,13 +39,13 @@ No `@vue/test-utils`/component-mount unit tests in this project — component be
 
 ## Phase 5 — end-to-end QA
 
-- [ ] Cypress e2e — happy path: fill form, verify result matches a known PMT example
-- [ ] Cypress e2e — validation path: invalid/incomplete inputs block the result and show errors
-- [ ] Manual QA: cross-check 3+ calculation scenarios against Excel/Google Sheets `PMT()`
-- [ ] Run `npm run lint`, fix issues
-- [ ] Run full unit + e2e suites, confirm green
+- [x] Cypress e2e — happy path: fill form, verify result matches a known PMT example
+- [x] Cypress e2e — validation path: invalid/incomplete inputs block the result and show errors
+- [x] Manual QA: cross-check 3+ calculation scenarios against Excel/Google Sheets `PMT()`
+- [x] Run `npm run lint`, fix issues
+- [x] Run full unit + e2e suites, confirm green
 
 ## Phase 6 — Docs
 
-- [ ] Update [DESCRIPTION.md](DESCRIPTION.md) and this file with final notes / any deviations
-- [ ] Record QA results (scenarios checked, expected vs actual)
+- [x] Update [DESCRIPTION.md](DESCRIPTION.md) and this file with final notes / any deviations
+- [x] Record QA results (scenarios checked, expected vs actual)

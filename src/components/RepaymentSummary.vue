@@ -35,7 +35,10 @@ defineProps({
           <p class="text-sm text-emerald-200">
             {{ periodLabel ? ` ${periodLabel}` : '' }} Repayment
           </p>
-          <p class="mt-1 text-4xl font-semibold tracking-tight">
+          <p
+            data-testid="repayment-per-period"
+            class="mt-1 text-4xl font-semibold tracking-tight"
+          >
             {{ formatCurrency(repayment.repaymentPerPeriod) }}
           </p>
         </div>
@@ -44,7 +47,10 @@ defineProps({
           <p class="text-sm text-emerald-200">
             Total repayments over the life of the loan
           </p>
-          <p class="mt-1 text-2xl font-semibold tracking-tight">
+          <p
+            data-testid="repayment-total"
+            class="mt-1 text-2xl font-semibold tracking-tight"
+          >
             {{ formatCurrency(repayment.totalRepayment) }}
           </p>
         </div>

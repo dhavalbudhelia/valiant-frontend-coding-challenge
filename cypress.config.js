@@ -6,6 +6,7 @@ export default defineConfig({
     setupNodeEvents (on) {
       on('file:preprocessor', vitePreprocessor())
     },
+    baseUrl: 'http://localhost:5173',
     specPattern: 'tests/e2e/specs/**',
     supportFile: 'tests/e2e/support/e2e.js',
   },
