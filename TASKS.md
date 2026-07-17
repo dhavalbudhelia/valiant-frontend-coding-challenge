@@ -14,9 +14,9 @@ Detailed, granular breakdown of [DESCRIPTION.md](DESCRIPTION.md)'s phases. Each 
 
 ## Phase 2 — State composable
 
-- [ ] Build `useLoanCalculator()` composable: reactive form state (`loanAmount`, `loanPurpose`, `repaymentPeriod`, `loanTerm`) + reference data + `loading`/`error`
-- [ ] Add `fetchReferenceData()` to the composable, wired to the service layer, with loading/error handling
-- [ ] Add computed values: `isFormValid`, `selectedAnnualRate`, `repayment` (per-period + total)
+- [x] Build `useLoanCalculator()` composable: reactive form state (`loanAmount`, `loanPurpose`, `repaymentPeriod`, `loanTerm`) + reference data + `loading`/`error`
+- [x] Add `fetchReferenceData()` to the composable, wired to the service layer, with loading/error handling
+- [x] Add computed values: `isFormValid`, `selectedAnnualRate`, `repayment` (per-period + total)
   - Test: unit test the composable directly with a mocked service module — valid/invalid input combinations, loading/error toggling
 
 ## Phase 3 — Components
