@@ -6,10 +6,10 @@ Detailed, granular breakdown of [DESCRIPTION.md](DESCRIPTION.md)'s phases. Each 
 
 ## Phase 1 — API & repayment engine (no UI yet)
 
-- [ ] Build API service layer: fetch wrapper + endpoint functions for `/loan-purposes`, `/requested-repayment-periods`, `/requested-term-months`
-- [ ] Write `calculateRepayment()` util wrapping `PMT.js` (derives `rate`, `nper`, `pv` per [PRD §5.2](PRD.md))
+- [x] Build API service layer: fetch wrapper + endpoint functions for `/loan-purposes`, `/requested-repayment-periods`, `/requested-term-months`
+- [x] Write `calculateRepayment()` util wrapping `PMT.js` (derives `rate`, `nper`, `pv` per [PRD §5.2](PRD.md))
   - Test: unit test against the brief's worked example ($30,000 @ 10%/yr, 2 years, monthly ≈ 1,384.35) + 2–3 more Excel/Sheets-verified cases
-- [ ] Write currency formatting utility (`Intl.NumberFormat`)
+- [x] Write currency formatting utility (`Intl.NumberFormat`)
   - Test: unit tests for zero, large values, rounding
 
 ## Phase 2 — State composable
