@@ -25,3 +25,7 @@ npm install
 - `npm run lint` – Lint the code.
 - `npm run test:e2e` – Open Cypress.
 - `npm run test:unit` – Run vitest unit tests.
+
+## Screenshot
+
+![alt text](<Loan Calculator.png>)
