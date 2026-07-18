@@ -5,8 +5,8 @@ describe('calculateRepayment', () => {
     const result = calculateRepayment({
       amount: 30000,
       annualRate: 0.1,
-      periodsPerYear: 12,
-      termMonths: 24,
+      repaymentPeriod: 12,
+      loanTerm: 24,
     })
 
     expect(result.repaymentPerPeriod).toBeCloseTo(1384.35, 2)
@@ -17,8 +17,8 @@ describe('calculateRepayment', () => {
     const result = calculateRepayment({
       amount: 10000,
       annualRate: 0.045,
-      periodsPerYear: 52,
-      termMonths: 12,
+      repaymentPeriod: 52,
+      loanTerm: 12,
     })
 
     expect(result.repaymentPerPeriod).toBeCloseTo(196.75, 2)
@@ -29,8 +29,8 @@ describe('calculateRepayment', () => {
     const result = calculateRepayment({
       amount: 500000,
       annualRate: 0.029,
-      periodsPerYear: 12,
-      termMonths: 120,
+      repaymentPeriod: 12,
+      loanTerm: 120,
     })
 
     expect(result.repaymentPerPeriod).toBeCloseTo(4804.99, 2)
@@ -41,8 +41,8 @@ describe('calculateRepayment', () => {
     const result = calculateRepayment({
       amount: 12000,
       annualRate: 0,
-      periodsPerYear: 12,
-      termMonths: 12,
+      repaymentPeriod: 12,
+      loanTerm: 12,
     })
 
     expect(result.repaymentPerPeriod).toBeCloseTo(1000, 2)
@@ -53,8 +53,8 @@ describe('calculateRepayment', () => {
     const result = calculateRepayment({
       amount: 20000000,
       annualRate: 0.1,
-      periodsPerYear: 52,
-      termMonths: 240,
+      repaymentPeriod: 52,
+      loanTerm: 240,
     })
 
     expect(Number.isFinite(result.repaymentPerPeriod)).toBe(true)
@@ -67,8 +67,8 @@ describe('calculateRepayment', () => {
     const result = calculateRepayment({
       amount: 30000,
       annualRate: 0.1,
-      periodsPerYear: 12,
-      termMonths: 24,
+      repaymentPeriod: 12,
+      loanTerm: 24,
     })
 
     expect(result.repaymentPerPeriod).toBeGreaterThan(0)

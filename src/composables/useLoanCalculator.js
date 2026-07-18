@@ -39,8 +39,8 @@ export function useLoanCalculator () {
     return calculateRepayment({
       amount: Number(loanAmount.value),
       annualRate: selectedAnnualRate.value,
-      periodsPerYear: Number(repaymentPeriod.value),
-      termMonths: Number(loanTerm.value),
+      repaymentPeriod: Number(repaymentPeriod.value),
+      loanTerm: Number(loanTerm.value),
     })
   })
 
